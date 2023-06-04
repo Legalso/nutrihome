@@ -11,40 +11,25 @@ function calcularIMC() {
   if (imc < 18.5) {
     resultadoElement.classList.add('amarelo');
     mensagemElement.textContent = 'IMC abaixo do peso (não saudável)';
+    exibirDietaRecomendada('pagina_indicacao_dieta_abaixo.html');
   } else if (imc >= 18.5 && imc <= 24.9) {
     resultadoElement.classList.add('verde');
     mensagemElement.textContent = 'IMC saudável';
+    exibirDietaRecomendada('pagina_indicacao_dieta_saudavel.html');
   } else {
     resultadoElement.classList.add('vermelho');
     mensagemElement.textContent = 'IMC acima do peso (não saudável)';
+    exibirDietaRecomendada('pagina_indicacao_dieta_acima.html');
   }
-
-  var botaoRedirecionar = document.getElementById('botao-redirecionar');
-  botaoRedirecionar.style.display = 'block';
 }
 
-function exibirResultadoIMC() {
+function exibirDietaRecomendada(url) {
   var botaoRedirecionar = document.getElementById('botao-redirecionar');
-  botaoRedirecionar.addEventListener('click', redirecionarDieta);
+  botaoRedirecionar.setAttribute('href', url);
   botaoRedirecionar.style.display = 'block';
-}
-
-function redirecionarDieta() {
-  var imc = parseFloat(document.getElementById('resultado').textContent.split(':')[1]);
-
-  if (imc < 18.5) {
-    window.location.href = 'pagina_indicacao_dieta_abaixo.html'; // Redireciona para a página de indicação de dieta abaixo do peso
-  } else if (imc >= 18.5 && imc <= 24.9) {
-    window.location.href = 'pagina_indicacao_dieta_saudavel.html'; // Redireciona para a página de indicação de dieta saudável
-  } else {
-    window.location.href = 'pagina_indicacao_dieta_acima.html'; // Redireciona para a página de indicação de dieta acima do peso
-  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   var calcularButton = document.getElementById('calcular-button');
-  calcularButton.addEventListener('click', function() {
-    calcularIMC();
-    exibirResultadoIMC();
-  });
+  calcularButton.addEventListener('click', calcularIMC);
 });
