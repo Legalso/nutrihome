@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriHome - Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="/imagens/NutriHomeLogo.png" alt="NutriHome Logo">
+    <h1>NutriHome</h1>
+  </header>
+  <h1>Calculadora de IMC</h1>
+  <form>
+    <div>
+      <label for="peso">Peso (kg):</label>
+      <input type="text" id="peso" name="peso">
+    </div>
+    <div>
+      <label for="altura">Altura (cm):</label>
+      <input type="text" id="altura" name="altura">
+    </div>
+    <button type="button" onclick="calcularIMC()">Calcular</button>
+  </form>
+  <div id="resultado"></div>
+  <div id="mensagem"></div>
+
+<button id="botao-redirecionar" style="display: none;">Veja aqui a sua dieta recomendada!</button>
+
+  <h2>Níveis de IMC</h2>
+  <table>
+    <tr>
+      <th>IMC</th>
+      <th>Categoria</th>
+    </tr>
+    <tr>
+      <td id="amarelo1">Menor que 18.5</td>
+      <td id="amarelo1">Abaixo do peso</td>
+    </tr>
+    <tr>
+      <td id="verde1">18.5 - 24.9</td>
+      <td id="verde1">Peso normal</td>
+    </tr>
+    <tr>
+      <td id="vermelho1">25 - 29.9</td>
+      <td id="vermelho1">Sobrepeso</td>
+    </tr>
+    <tr>
+      <td id="vermelho1">30 - 34.9</td>
+      <td id="vermelho1">Obesidade grau 1</td>
+    </tr>
+    <tr>
+      <td id="vermelho1">35 - 39.9</td>
+      <td id="vermelho1">Obesidade grau 2</td>
+    </tr>
+    <tr>
+      <td id="vermelho1">Maior que 40</td>
+      <td id="vermelho1">Obesidade grau 3</td>
+    </tr>
+  </table>
+  <p>
+    O Índice de Massa Corporal (IMC) é uma medida que utiliza o peso e a altura de uma pessoa para avaliar se seu peso está dentro de uma faixa considerada saudável. Ele é amplamente utilizado como uma ferramenta para identificar a obesidade e o sobrepeso, indicando o risco de desenvolver problemas de saúde relacionados.
+</p>
+<p>
+    O IMC é calculado dividindo o peso (em quilogramas) pela altura ao quadrado (em metros). Apesar de suas limitações, o IMC é uma métrica simples e amplamente reconhecida que pode ajudar a identificar possíveis problemas de peso.
+</p>
+<p>
+    Caso você queira obter mais informações sobre o IMC, você pode consultar a página da
+    <a href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal" target="_blank">Wikipedia</a>.
+</p>
+
+  <a href="mainPage.html" class="botao01">Voltar</a>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,3 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4a8be0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  header img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  
+  header h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    display: inline;
+  }
+
+body {
+    padding-top: 100px;
+    background-color: #7DA3D5;
+    color: #004AAD;
+  }
+  
+  /* h1, h2, h3, h4, h5, h6 {
+    color: #004AAD;
+  } */
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #002E3D;
+    font-family: 'Playfair Display', serif;
+  }
+  
+
+  /* p {
+    color: #FFFFFF;
+  } */
+
+p {
+    color: #2C383D;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.amarelo {
+    color: red;
+  }
+  
+  .verde {
+    color: green;
+  }
+  
+  .vermelho {
+    color: red;
+  }
+
+  #amarelo1 {
+    color: red;
+  }
+  
+  #verde1 {
+    color: green;
+  }
+  
+  #vermelho1 {
+    color: red;
+  }
+
+  #inicialimage {
+    width: 30%;
+    height: auto;
+}
+
 .botao01{
     background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
     background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
