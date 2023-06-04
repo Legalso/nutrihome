@@ -15,7 +15,8 @@
         </nav>
       </header>
   <div>
-      <h2>NutriHome</h2>
+      <h1>NutriHome</h1>
+      <p id="center">O seu assistente nutricional!</p>
       <form>
           <div>
               <label for="loginOption">Opção de Login:</label>
@@ -34,15 +35,30 @@
               <label for="password">Senha:</label>
               <input type="password" id="password" name="password">
           </div>
-          <a class="botao01" href="mainPage.html">Entrar</a>
-          <a class="botao01" href="criarConta.html">Criar Conta</a>
-      </form>
 
-      <div>
-          <p>Ou faça login usando:</p>
-          <a class="botao01" href="mainPage.html">Google</a>
-          <a class="botao01" href="mainPage.html">Facebook</a>
-      </div>
+
+          <div class="anchor-centralizada login-options">
+            <a href="mainPage.html">Entrar</a>
+            <a href="criarConta.html">Criar Conta</a>
+          </div>
+      
+          <div>
+
+            <div class="center-text">
+                <p>Ou faça login usando:</p>
+              </div>
+
+
+            <div class="anchor-centralizada social-media">
+                <a href="mainPage.html" class="google">
+                    <img src="/imagens/Google.png" alt="Google" width="200" height="200">
+                  </a>
+                  <a href="mainPage.html" class="facebook">
+                    <img src="/imagens/Facebook.png" alt="Facebook" width="200" height="200">
+                  </a>
+            </div>
+          </div>
+      </form>
   </div>
   <script src="main.js"></script>
 </body>
