@@ -4,9 +4,87 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriHome</title>
+  <title>NutriHome - Especialista</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="imagens/NutriHomeLogo.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .button-primary {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    .button-primary:hover {
+      background-color: #45a049;
+    }
+
+    .button-secondary {
+      background-color: #f44336;
+      color: #fff;
+    }
+
+    .button-secondary:hover {
+      background-color: #d32f2f;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -34,6 +112,30 @@
       </ul>
     </nav>
   </header>
+  <h1>Fale com um Especialista</h1>
+  <h1>Fale com um Especialista</h1>
+  <form>
+    <div>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+    </div>
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div>
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem"></textarea>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
 
+  <p>Nossos especialistas estão prontos para ajudar você com suas dúvidas, sugestões ou qualquer outra informação que você precise. Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+
+  <p><strong>Horário de atendimento:</strong> de segunda a sexta-feira, das 9h às 18h.</p>
+
+  <p><strong>Tempo de resposta:</strong> Nosso objetivo é responder às suas mensagens dentro de 24 horas úteis.</p>
+
+  <a href="mainPage.html" class="botao01">Voltar</a>
 </body>
 </html>

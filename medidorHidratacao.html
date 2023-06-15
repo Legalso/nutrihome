@@ -4,9 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriHome</title>
+  <title>NutriHome - Medidor de Hidratação</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="imagens/NutriHomeLogo.png">
+  <style>
+    body {
+      background-color: #ffffff;
+    }
+    .medidor-container {
+      text-align: center;
+    }
+    .medidor-imagem {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .medidor-contador {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    .medidor-meta {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .medidor-botoes {
+      margin-top: 20px;
+    }
+    .medidor-botoes button {
+      font-size: 20px;
+      padding: 8px 16px;
+      margin: 0 10px;
+      border-radius: 50%;
+    }
+    .parabens-mensagem {
+      font-size: 20px;
+      color: green;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -26,7 +60,6 @@
           <img class="configuracao-img" src="imagens/dieta.png" alt="IMC">
           Calculadora de IMC
         </a></li>
-        </a></li>
         <li><a href="especialista.html">
           <img class="configuracao-img" src="/imagens/especialista.png" alt="IMC">
           Falar com especialista
@@ -35,5 +68,49 @@
     </nav>
   </header>
 
+  <div class="medidor-container">
+    <h2>Medidor de Hidratação</h2>
+    <img id="medidor-imagem" class="medidor-imagem" src="imagens/aguaestagio0.png" alt="Imagem de Hidratação">
+    <div id="medidor-contador" class="medidor-contador">0 ml</div>
+    <div class="medidor-meta">Meta: 2400 ml</div>
+    <div class="medidor-botoes">
+      <button onclick="diminuirHidratacao()" class="round-button">-</button>
+      <button onclick="aumentarHidratacao()" class="round-button">+</button>
+    </div>
+    <div id="parabens-mensagem" class="parabens-mensagem" style="display: none;">Parabéns! Você atingiu a meta de hidratação!</div>
+  </div>
+
+  <script>
+    var contador = 0;
+    var meta = 2400;
+
+    function diminuirHidratacao() {
+      if (contador > 0) {
+        contador -= 600;
+        exibirContador();
+        verificarMeta();
+      }
+    }
+
+    function aumentarHidratacao() {
+      if (contador < meta) {
+        contador += 600;
+        exibirContador();
+        verificarMeta();
+      }
+    }
+
+    function exibirContador() {
+      document.getElementById("medidor-contador").textContent = contador + " ml";
+    }
+
+    function verificarMeta() {
+      if (contador >= meta) {
+        document.getElementById("parabens-mensagem").style.display = "block";
+      } else {
+        document.getElementById("parabens-mensagem").style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
