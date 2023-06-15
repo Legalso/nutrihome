@@ -14,7 +14,7 @@
     .medidor-container {
       text-align: center;
     }
-    .medidor-imagem {
+    #medidor-imagem {
       max-width: 300px;
       margin: 0 auto;
     }
@@ -61,7 +61,7 @@
           Calculadora de IMC
         </a></li>
         <li><a href="especialista.html">
-          <img class="configuracao-img" src="/imagens/especialista.png" alt="IMC">
+          <img class="configuracao-img" src="imagens/especialista.png" alt="IMC">
           Falar com especialista
         </a></li>
       </ul>
@@ -70,7 +70,7 @@
 
   <div class="medidor-container">
     <h2>Medidor de Hidratação</h2>
-    <img id="medidor-imagem" class="medidor-imagem" src="imagens/aguaestagio0.png" alt="Imagem de Hidratação">
+    <img id="medidor-imagem" src="imagens/aguaestagio0.png" alt="Imagem de Hidratação">
     <div id="medidor-contador" class="medidor-contador">0 ml</div>
     <div class="medidor-meta">Meta: 2400 ml</div>
     <div class="medidor-botoes">
@@ -83,12 +83,14 @@
   <script>
     var contador = 0;
     var meta = 2400;
+    var medidorImagem = document.getElementById("medidor-imagem");
 
     function diminuirHidratacao() {
       if (contador > 0) {
         contador -= 600;
         exibirContador();
         verificarMeta();
+        atualizarImagem();
       }
     }
 
@@ -97,6 +99,7 @@
         contador += 600;
         exibirContador();
         verificarMeta();
+        atualizarImagem();
       }
     }
 
@@ -110,6 +113,11 @@
       } else {
         document.getElementById("parabens-mensagem").style.display = "none";
       }
+    }
+
+    function atualizarImagem() {
+      var imagemEstagio = Math.floor(contador / (meta / 4));
+      medidorImagem.src = "imagens/aguaestagio" + imagemEstagio + ".png";
     }
   </script>
 </body>
