@@ -6,6 +6,18 @@ function calcularIMC() {
   var resultadoElement = document.getElementById('resultado');
   var mensagemElement = document.getElementById('mensagem');
 
+  if (peso === '0' || altura === '0' || peso === 0 || altura === 0) {
+    resultadoElement.textContent = '';
+    mensagemElement.textContent = 'Por favor, insira um valor válido para peso e altura.';
+    return;
+  }
+
+  if (peso === '' || altura === '') {
+    resultadoElement.textContent = '';
+    mensagemElement.textContent = 'Por favor, preencha o peso e a altura.';
+    return;
+  }
+
   resultadoElement.textContent = 'Seu IMC é: ' + imc.toFixed(2);
 
   if (imc < 18.5) {
