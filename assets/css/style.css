@@ -253,3 +253,10 @@ button:hover {
 #titulodieta {
   font-size: 30px;
 }
+
+#background-index{
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
