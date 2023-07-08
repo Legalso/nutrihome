@@ -256,7 +256,12 @@ button:hover {
 
 #background-index{
   position: absolute;
-  background-color: black;
+  background-color: #002E3D;
+  height: 100vh;
+  width: 100%;
+}
+
+#img-background-index{
   height: 100%;
   width: 100%;
 }
