@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+#logoNutrihome{
+  width: 25%;
+}
+
 body{
     height: 100vh;
+    overflow-y: hidden;
+}
+
+#background-index{
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#img-background-index{
+    height: 100%;
+    width: 100%;
 }
