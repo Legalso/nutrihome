@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+    font-family: 'Happy Monkey', cursive;
+    margin: 0; /* Adicione esta linha para remover a margem padrão do corpo */
+    background-color: black;
+}
+
+                    /* tela index */                
+#background-index{
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}

@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
 body{
     height: 100vh;
     overflow-y: hidden;
+    font-family: 'Happy Monkey', cursive;
+    margin: 0; /* Adicione esta linha para remover a margem padrão do corpo */
+    overflow: hidden; /* Adicione esta linha para evitar a rolagem vertical */
+    background-color: black;
 }
 
                     /* tela index */                
@@ -15,6 +22,8 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
+    background-size: cover; /* Alteração para background não esticado */
+    background-repeat: no-repeat;
 }
 
 #img-background-index{
@@ -65,7 +74,6 @@ body{
 
 /* section da parte central */
 #section-partecentral{
-    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -95,6 +103,7 @@ body{
     margin-top: 5%;
     height: 28%;
     width: 100%;
+    font-family: 'Happy Monkey', cursive;
 }
 
 #area-login{
@@ -103,17 +112,20 @@ body{
     flex-direction: column;
     height: 45%;
     padding-left: 5%;
+    font-family: 'Happy Monkey', cursive;
 }
 
 #area-login div{
     display: flex;
     justify-content: space-around;
     height: 42%;
+    width: 90%;
 }
 
 #area-login div label{
     font-size: 140%;
     color: white;
+    font-family: 'Happy Monkey', cursive;
 }
 
 #area-login div input{
@@ -129,6 +141,7 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 40%;
+    
 }
 
 #area-botoes a{
@@ -181,3 +194,61 @@ body{
 #social-media .facebook img{
     height: 100%;
 }
+
+/* responsivo para celular */
+@media (max-width: 768px) {
+    #section-qr_code {
+        display: none;
+    }
+    #section-nestle {
+        display: none;
+    }
+    #section-partecentral {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    #box-logo {
+        margin-top: 10%;
+    }
+
+    #area-login {
+        padding-left: 5%;
+    }
+
+    #area-botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #area-botoes a {
+        margin-top: 5%;
+        width: 60%;
+        font-size: 14px;
+    }
+
+    #area-tipos-login {
+        margin-top: 5%;
+    }
+
+    #social-media {
+        height: 60%; /* Diminuindo o tamanho das imagens */
+    }
+
+    #logoNutrihome {
+        width: 80%; /* Diminuindo o tamanho do logo */
+        max-width: 500px;
+    }
+
+    #box-logo p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+  
+  
