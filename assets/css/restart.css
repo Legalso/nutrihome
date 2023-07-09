@@ -4,8 +4,23 @@
     box-sizing: border-box;
 }
 
+.divisao{
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    align-items: baseline;
+}
+
 #logoNutrihome{
   width: 25%;
+}
+
+#nestle_logo1{
+    width: 10%;
+}
+
+#qr_code{
+    width: 10%;
 }
 
 body{
