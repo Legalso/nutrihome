@@ -14,53 +14,64 @@
     <img id="img-background-index" src="img/fundodetela.png" alt="Fundo do site">
   </div>
 
-  <!-- sections -->
+  <!-- area sections -->
 
-  <div class="divisao">
+<div class="divisao">
 
   <div id="section-qr_code">
-    <img id="qr_code" src="img/qrcodenutrihome.png" alt="QR Code do site">
+    <div id="area-qr-code">
+      <img id="qr_code" src="img/qrcodenutrihome.png" alt="QR Code do site">
+    </div>
   </div>
 
-  <section id="partecentral">
-  <div id="section-logo">
+  <section id="section-partecentral">
+  <div id="box-logo">
     <img id="logoNutrihome" src="img/logo_nutrihome.png" alt="Logo Nutrihome">
     <p>Sua saúde em boas mãos, na comodidade do lar.</p>
   </div>
+
+  
   <form class="preenche_texto">
+    <div id="area-login">
       <div>
           <label for="login">LOGIN:</label>
-          <input type="text" id="login" name="login">
+          <input type="text" id="login" name="login" placeholder="Digite seu e-mail ou telefone">
       </div>
       <div>
           <label for="password">SENHA:</label>
-          <input type="password" id="password" name="password">
+          <input type="password" id="password" name="password" placeholder="Digite sua senha">
       </div>
-      <div class="anchor-centralizada login-options">
-        <a href="mainPage.html">Entrar</a>
-        <a href="criarConta.html">Criar Conta</a>
+    </div>
+
+      <!-- <div class="anchor-centralizada login-options"> -->
+      <div id="area-botoes">
+        <a href="mainPage.html">ENTRAR</a>
+        <a href="criarConta.html">CRIAR CONTA</a>
       </div>
-      <div>
-        <div class="center-text">
-            <p>Ou faça login usando:</p>
-          </div>
-        <div class="anchor-centralizada social-media">
-            <a href="mainPage.html" class="google">
-                <img src="imagens/Google.png" alt="Google" width="200" height="200">
-              </a>
-              <a href="mainPage.html" class="facebook">
-                <img src="imagens/Facebook.png" alt="Facebook" width="200" height="200">
-              </a>
-        </div>
+    </form>
+
+    <div id="area-tipos-login">
+      <div id="title-tipos-login">
+          <p>Ou entre com:</p>
       </div>
-  </form>
+      <div id="social-media">
+        <a href="mainPage.html" class="facebook">
+          <img src="img/facebookicon.png" alt="Facebook">
+        </a>
+        <a href="mainPage.html" class="google">
+          <img src="img/googleicon.png" alt="Google">
+        </a>
+      </div>
+    </div>
   </section>
 
-  <div id="section-nestle">
-    <img id="nestle_logo1" src="img/Nestle-Logo.png" alt="Logo Nestlé">
-  </div>
+  <section id="section-nestle">
+    <div id="area-nestle">
+      <img id="nestle_logo1" src="img/Nestle-Logo.png" alt="Logo Nestlé">
+    </div>
+  </section>
 
-  </div>
+</div>
 
   <script src="assets/js/main.js"></script>
 </body>

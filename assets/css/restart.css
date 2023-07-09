@@ -4,30 +4,12 @@
     box-sizing: border-box;
 }
 
-.divisao{
-    display: flex;
-    justify-content: center;
-    align-content: stretch;
-    align-items: baseline;
-}
-
-#logoNutrihome{
-  width: 25%;
-}
-
-#nestle_logo1{
-    width: 10%;
-}
-
-#qr_code{
-    width: 10%;
-}
-
 body{
     height: 100vh;
     overflow-y: hidden;
 }
 
+                    /* tela index */                
 #background-index{
     z-index: -1;
     position: absolute;
@@ -38,4 +20,164 @@ body{
 #img-background-index{
     height: 100%;
     width: 100%;
+}
+
+/* box com sections */
+.divisao{
+    display: flex;
+    height: 100%;
+}
+
+/* sections das logos */
+#section-nestle{
+    display: flex;
+    justify-content: center;
+    width: 34vw;
+}
+
+#area-nestle{
+    margin-top: 20%;
+    width: 45%;
+    height: 30%;
+    
+}
+
+#nestle_logo1{
+    height: 100%;
+}
+
+
+#section-qr_code{
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+}
+
+#area-qr-code{
+    margin-top: 20%;
+    height: 35%;
+    width: 45%;
+}
+
+#qr_code{
+    height: 100%;
+}
+
+/* section da parte central */
+#section-partecentral{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33vw;
+}
+
+#box-logo{
+    display: flex;
+    margin-top: 7%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 45%;
+}
+
+#logoNutrihome{
+    width: 85%;
+}
+
+#box-logo p{
+    font-size: 120%;
+    margin-top: 1%;
+    color: rgb(255, 103, 48);
+}
+
+.preenche_texto{
+    margin-top: 5%;
+    height: 28%;
+    width: 100%;
+}
+
+#area-login{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 45%;
+    padding-left: 5%;
+}
+
+#area-login div{
+    display: flex;
+    justify-content: space-around;
+    height: 42%;
+}
+
+#area-login div label{
+    font-size: 140%;
+    color: white;
+}
+
+#area-login div input{
+    height: 100%;
+    width: 80%;
+    padding-left: 3%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#area-botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40%;
+}
+
+#area-botoes a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 4%;
+    background-color: rgb(255, 103, 48);
+    font-size: 120%;
+    height: 60%;
+    width: 30%;
+}
+
+#area-tipos-login{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 15%;
+    width: 100%;
+}
+
+#title-tipos-login{
+    height: 10%;
+    text-align: center;
+    color: rgb(255, 103, 48);
+    font-size: 120%;
+}
+
+#social-media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+}
+
+#social-media a{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-media .google img{
+    height: 85%;
+}
+
+#social-media .facebook img{
+    height: 100%;
 }
