@@ -80,6 +80,8 @@ header#headerDoCadastro {
   margin-right: auto;
 }
 
+/*
+
 #informacoes {
   display: flex;
   flex-wrap: wrap;
@@ -130,9 +132,16 @@ header#headerDoCadastro {
   margin-right: 5px;
 }
 
+*/
+
 #area-botoes {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+
+#ladoEsquerdo {
+  display: flex
+  
 }
