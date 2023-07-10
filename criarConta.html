@@ -23,72 +23,54 @@
     <img id="logoNutrihomeCadastro" src="img/logo_nutrihome.png" alt="Logo Nutrihome">
     <div id="headerText">
       <img id="opcao" src="img/optionsblue.png" alt="Símbolo azul de engrenagem">
-      <p>CRIAR CONTA</p>
+      <p id="textoDoHeader">CRIAR CONTA</p>
     </div>
     <img id="nestle_logoCadastro" src="img/Nestle-Logo.png" alt="Logo Nestlé">
   </header>
 
+  <!-- Parte de cima -->
   
-  <section id="parteDeCima">
-  
-  <section id="ladoEsquerdo">
-    
-  <!-- parte das informacoes -->
-  
-  <div id="informacoes">
-    <div>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+  <section id="parte_de_cima">
+    <div id="area-login">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+      </div>
+      <div>
+        <label for="telefone">Telefone:</label>
+        <input type="number" id="telefone" name="telefone" placeholder="Digite seu telefone">
+      </div>
+      <div>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+      </div>
     </div>
-    <div>
-      <label for="email">E-mail:</label>
-      <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
-    </div>
-    <div>
-      <label for="telefone">Telefone:</label>
-      <input type="number" id="telefone" name="telefone" placeholder="Digite seu telefone">
-    </div>
-    <div>
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
-    </div>
-  </div>
 
-<!-- parte da seleção de sexo -->
-
-  <div id="selecionarsexo">
-    <label for="sexo">Sexo:</label>
-    <div>
-      <img id="sexo-masculino" src="img/sexo-masculino.png" alt="Sexo Masculino">
-      <p>Masculino</p>
+    <div id="roleselection">
+      <div id="paciente-container" onclick="selectRole('paciente')">
+        <div class="image-container">
+          <img id="paciente-img" src="img/people.PNG" alt="Paciente">
+        </div>
+      </div>
+      <div id="nutri-container" onclick="selectRole('nutri')">
+        <div class="image-container">
+          <img id="nutri-img" src="img/Nutri.png" alt="Nutricionista">
+        </div>
+      </div>
     </div>
-    <div>
-      <img id="sexo-feminino" src="img/sexo-feminino.png" alt="Sexo Feminino">
-      <p>Feminino</p>
-    </div>
-  </div>
   </section>
-
-<section id="ladoDireito">
-  <div id="roleselection">
-    <div>
-      <img id="paciente-img" src="img/people.PNG" alt="Paciente">
-      <p>Sou paciente</p>
-    </div>
-    <div>
-      <img id="nutri-img" src="img/Nutri.png" alt="Nutricionista">
-      <p>Sou Nutri</p>
-    </div>
-  </div>
-</section>
-
-</section>
 
   <!-- botão de criar conta -->
   
   <div id="area-botoes">
     <a href="index.html">CRIAR</a>
   </div>
+
+  <script src="assets/js/cadastro.js"></script>
   
 </body>
 </html>
