@@ -1,24 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-    height: 100vh;
-    overflow-y: hidden;
-    font-family: 'Happy Monkey', cursive;
-    margin: 0; /* Adicione esta linha para remover a margem padrão do corpo */
-    background-color: black;
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: 'Happy Monkey', cursive;
+  margin: 0;
+  background-color: black;
+  color: white; /* Alteração para cor do texto branco */
 }
 
-                    /* tela index */                
-#background-index{
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+#background-index {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#img-background-index {
+  height: 100%;
+  width: 100%;
+}
+
+#logoNutrihomeCadastro {
+  width: 5%;
+}
+
+#opcao {
+  width: 5%;
+}
+
+#nestle_logoCadastro {
+  width: 5%;
+}
+
+#paciente-img {
+  width: 5%;
+}
+
+#nutri-img {
+  width: 5%;
+}
+
+#area-botoes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 4%;
+  background-color: rgb(255, 103, 48);
+  font-size: 120%;
+  height: 60%;
+  width: 30%;
+}
+
+/* Estilos adicionados */
+
+header#headerDoCadastro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #20c3ff;
+}
+
+#informacoes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#informacoes > div {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#informacoes > div:nth-child(2) {
+  width: calc(50% - 10px);
+}
+
+#selecionarsexo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+#selecionarsexo label {
+  display: block;
+}
+
+#selecionarsexo img {
+  margin: 5px 0;
+}
+
+#roleselection {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+#roleselection > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#roleselection > div img {
+  margin-right: 5px;
+}
+
+#area-botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }

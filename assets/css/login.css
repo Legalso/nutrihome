@@ -134,6 +134,7 @@ body{
     padding-left: 3%;
     border: 1px solid black;
     border-radius: 8px;
+    font-family: 'Happy Monkey', cursive;
 }
 
 #area-botoes{
@@ -195,6 +196,12 @@ body{
     height: 100%;
 }
 
+/* trocar a cor da seleção de texto */
+::selection {
+    background-color: #3EB14A;
+    color: #fff;
+}
+
 /* responsivo para celular */
 @media (max-width: 768px) {
     #section-qr_code {
@@ -236,11 +243,11 @@ body{
     }
 
     #social-media {
-        height: 60%; /* Diminuindo o tamanho das imagens */
+        height: 60%;
     }
 
     #logoNutrihome {
-        width: 80%; /* Diminuindo o tamanho do logo */
+        width: 80%;
         max-width: 500px;
     }
 
@@ -249,6 +256,3 @@ body{
         margin-top: 10px;
     }
 }
-
-  
-  

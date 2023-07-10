@@ -8,51 +8,60 @@
   <link rel="stylesheet" href="assets/css/cadastro.css">
   <link rel="icon" href="img/logo_nutrihome.png">
 </head>
-<!-- 
-  código antigo
-  <body>
-  <header>
-    <img src="img/NutriHomeLogo.png" alt="NutriHome Logo">
-    <h1>NutriHome</h1>
-    <nav>
-    </nav>
+
+<body>
+
+  <!-- background do site -->
+  <div id="background-index">
+    <img id="img-background-index" src="img/Fazenda.png" alt="Fundo do site">
+  </div>
+
+  <!-- header -->
+  <header id="headerDoCadastro">
+    <div id="headerText">
+      <img id="opcao" src="img/optionsblue.png" alt="Símbolo azul de engrenagem">
+      <p>CRIAR CONTA</p>
+    </div>
+    <img id="logoNutrihomeCadastro" src="img/logo_nutrihome.png" alt="Logo Nutrihome">
+    <img id="nestle_logoCadastro" src="img/Nestle-Logo.png" alt="Logo Nestlé">
   </header>
-  <h2>Crie a sua conta no NutriHome!</h2>
-  <form>
+
+  <!-- parte das informacoes -->
+  <div id="informacoes">
     <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+    </div>
+    <div>
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
     </div>
     <div>
       <label for="telefone">Telefone:</label>
-      <input type="telefone" id="telefone" name="telefone">
-    </div>
-    <div>
-      <label for="usuario">Usuário:</label>
-      <input type="text" id="usuario" name="usuario">
+      <input type="number" id="telefone" name="telefone" placeholder="Digite seu telefone">
     </div>
     <div>
       <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha">
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
     </div>
-    <a class="botao01" href="index.html">Criar conta</a>
-  </form>
-</body> 
--->
-<body>
-    <!-- background do site -->
-    <div id="background-index">
-      <img id="img-background-index" src="img/fundodetela.png" alt="Fundo do site">
-    </div>
-    
-<!-- header -->
-<header id="headerDoCadastro">
-<img id="logoNutrihomeCadastro" src="img/logo_nutrihome.png" alt="Logo Nutrihome">
-<div id="textoHeader">
-<img id="opcao" src="img/optionsblue.png" alt="Símbolo azul de engrenagem"> <p>CRIAR CONTA</p>
-</div>
-<img id="nestle_logoCadastro" src="img/Nestle-Logo.png" alt="Logo Nestlé">
-</header>
+  </div>
 
+  <div id="selecionarole">
+    <div id="roleselection">
+      <div>
+        <img id="paciente-img" src="img/people.PNG" alt="Paciente">
+        <p>Sou paciente</p>
+      </div>
+      <div>
+        <img id="nutri-img" src="img/Nutri.png" alt="Nutricionista">
+        <p>Sou Nutri</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- botão de criar conta -->
+  <div id="area-botoes">
+    <a href="index.html">CRIAR</a>
+  </div>
 </body>
 </html>
