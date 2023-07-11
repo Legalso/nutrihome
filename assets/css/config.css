@@ -124,6 +124,9 @@ h1 {
 }
 
 .optionsblue {
-  border: 2px solid white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Altere a transparência (0.5) conforme desejado */
+  width: 12%; /* Ajuste o tamanho do fundo conforme desejado */
+  height: 12%; /* Ajuste o tamanho do fundo conforme desejado */
+  border: none; /* Remova a borda */
+  box-shadow: none; /* Remova o efeito de sombra */
 }
