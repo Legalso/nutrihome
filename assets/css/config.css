@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: 'Happy Monkey', cursive;
+  margin: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0;
+}
+
+#background-index {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#img-background-index {
+  height: 100%;
+  width: 100%;
+}
+
+#fototemaescuro {
+  width: 7%;
+}
+
+#googlefit {
+  width: 3%;
+}
+
+#headerDaConfiguracao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #20c3ff;
+}
+
+#logoNutrihomeConfiguracao {
+  width: 10%;
+}
+
+#linksDaConfiguracao {
+  display: flex;
+  align-items: center;
+}
+
+#linksDaConfiguracao a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#linksDaConfiguracao a img {
+  width: 40%;
+  margin-left: 26%;
+}
+
+#imcCalculadora {
+  width: 70%;
+}
+
+#nestle_logoConfiguracao {
+  width: 8%;
+}
+
+#config-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#config-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.config-option {
+  display: flex;
+  align-items: center;
+}
+
+.config-option img {
+  width: 10%;
+  margin-right: 10px;
+}
+
+.config-option p {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.config-option p.underline {
+  text-decoration: underline;
+}
+
+.config-option p:hover {
+  cursor: pointer;
+  color: #20c3ff;
+}
+
+.optionsblue {
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

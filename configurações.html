@@ -5,45 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NutriHome - Configurações</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" href="img/NutriHomeLogo.png">
+  <link rel="stylesheet" href="assets/css/config.css">
+  <link rel="icon" href="img/logo_nutrihome.png">
 </head>
 <body>
-  <header>
-    <img src="img/NutriHomeLogo.png" alt="NutriHome Logo">
-    <h1>NutriHome</h1>
-    <nav>
-      <ul>
-        <ul>
-            <li><a href="mainPage.html">
-              <img class="pagina-principal-img" src="imagens/inicio.png" alt="Página Inicial">
-              Página Principal
-            </a></li>
-            <li><a href="imcCalculator.html">
-                <img class="configuracao-img" src="imagens/dieta.png" alt="IMC">
-                Calculadora de IMC
-              </a></li>
-          </ul>
-          <li><a href="medidorHidratacao.html">
-            <img class="configuracao-img" src="imagens/aguaicon.png" alt="IMC"> 
-
-            Medidor de Hidratação
-          </a></li>
-          <li><a href="especialista.html">
-            <img class="configuracao-img" src="imagens/especialista.png" alt="IMC">
-            Falar com especialista
-          </a></li>
+  <div id="background-index">
+    <img id="img-background-index" src="img/Fazenda.png" alt="Fundo do site">
+  </div>
+  <!-- header -->
+  <header id="headerDaConfiguracao">
+    <img id="logoNutrihomeConfiguracao" src="img/logo_nutrihome.png" alt="Logo Nutrihome">
+    <nav id="linksDaConfiguracao">
+      <a href="mainPage.html"><img src="img/resumo.png" alt="Ícone de página inicial"></a>
+      <a id="imcCalculadora" href="imcCalculator.html"><img src="img/imc.png" alt="Ícone de cálculo de IMC"></a>
+      <a href="medidorHidratacao.html"><img src="img/drinkwater.png" alt="Ícone de registro de água"></a>
+      <a href="especialista.html"><img src="img/falecomespecilista.png" alt="Ícone de falar com especialista"></a>
+      <a href="configurações.html"><img class="optionsblue" src="img/optionsblue.png" alt="Ícone de configurações"></a>
     </nav>
+    <img id="nestle_logoConfiguracao" src="img/Nestle-Logo.png" alt="Logo Nestlé">
   </header>
-  
-  <h1>Página de Configurações</h1>
-  
-  <!-- Conteúdo da página de configurações -->
-  
-  <div class="anchor-centralizada">
-    <a href="index.html">Sair da conta</a>
+
+  <!-- Resto do conteúdo da página de configurações -->
+  <div id="config-content">
+    <h1>Configurações da Conta</h1>
+    <div id="config-options">
+      <div class="config-option">
+        <p>Tema Escuro</p>
+        <img id="fototemaescuro" src="img/temaescuro.png" alt="Ícone de tema escuro">
+      </div>
+      <div class="config-option">
+        <p>Conectar com Google Fit</p>
+        <img id="googlefit" src="img/Google_Fit_icon_(2018).png" alt="Ícone do Google Fit">
+      </div>
+      <div class="config-option">
+        <p class="underline">Editar Dados Pessoais</p>
+      </div>
+      <div class="config-option">
+        <a href="index.html" class="underline">Sair da Conta</a>
+      </div>
+    </div>
   </div>
 
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
