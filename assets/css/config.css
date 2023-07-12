@@ -35,11 +35,11 @@ body {
 }
 
 #fototemaescuro {
-  width: 7%;
+  width: 5%;
 }
 
 #googlefit {
-  width: 3%;
+  width: 5%;
 }
 
 #headerDaConfiguracao {
@@ -78,24 +78,29 @@ body {
   width: 8%;
 }
 
+/* estilização da area de configuração */
+
 #config-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 75%;
+  justify-content: space-around;
+  height: 70%;
+  width: 50%;
+  font-size: 140%;
 }
 
-h1 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-#config-options {
+#temaEscuro{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+#conectarFit{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .config-option {
@@ -103,30 +108,20 @@ h1 {
   align-items: center;
 }
 
-.config-option img {
-  width: 10%;
-  margin-right: 10px;
+.hover{
+  transition: 500ms;
+  padding: 7px;
 }
 
-.config-option p {
-  text-align: center;
-  text-decoration: none;
-  color: white;
+.hover:hover{
+  background-color: #3EB14A;
+  cursor: pointer;
 }
 
-.config-option p.underline {
+.underline{
   text-decoration: underline;
 }
 
-.config-option p:hover {
-  cursor: pointer;
+.sair{
   color: #20c3ff;
-}
-
-.optionsblue {
-  background-color: rgba(0, 0, 0, 0.5); /* Altere a transparência (0.5) conforme desejado */
-  width: 12%; /* Ajuste o tamanho do fundo conforme desejado */
-  height: 12%; /* Ajuste o tamanho do fundo conforme desejado */
-  border: none; /* Remova a borda */
-  box-shadow: none; /* Remova o efeito de sombra */
 }
