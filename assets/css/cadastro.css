@@ -164,6 +164,7 @@ header#headerDoCadastro {
   margin-right: 10%;
   margin-bottom: 10%;
   width: 80%;
+  gap: 2%
 }
 
 #parte_de_cima {
@@ -191,7 +192,7 @@ header#headerDoCadastro {
 
 #area-login div label {
   font-size: 160%;
-  width: 50%;
+  width: 30%;
   color: white;
 }
 
