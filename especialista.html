@@ -4,138 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutriHome - Especialista</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="imagens/NutriHomeLogo.png">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-      color: #333;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 28px;
-      margin-top: 0;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    form {
-      margin-top: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      font-size: 14px;
-    }
-
-    textarea {
-      height: 120px;
-    }
-
-    button[type="submit"] {
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    .button-primary {
-      background-color: #4CAF50;
-      color: #fff;
-    }
-
-    .button-primary:hover {
-      background-color: #45a049;
-    }
-
-    .button-secondary {
-      background-color: #f44336;
-      color: #fff;
-    }
-
-    .button-secondary:hover {
-      background-color: #d32f2f;
-    }
-  </style>
+  <title>NutriHome - Fale com um especialista</title>
+  <link rel="stylesheet" href="assets/css/especialista.css">
+  <link rel="icon" href="img/logo_nutrihome.png">
 </head>
 <body>
-  <header>
-    <img src="imagens/NutriHomeLogo.png" alt="NutriHome Logo">
-    <h1>NutriHome</h1>
-    <nav>
-      <ul>
-        <li><a href="mainPage.html">
-            <img class="pagina-principal-img" src="imagens/inicio.png" alt="Página Inicial">
-            Página Principal
-          </a></li>
-        <li><a href="configurações.html">
-          <img class="configuracao-img" src="imagens/config.png" alt="Página Inicial">
-          Configurações
-        </a></li>
-        <li><a href="imcCalculator.html">
-          <img class="configuracao-img" src="imagens/dieta.png" alt="IMC">
-          Calculadora de IMC
-        </a></li>
-        </a></li>
-        <li><a href="medidorHidratacao.html">
-            <img class="configuracao-img" src="imagens/aguaicon.png" alt="IMC">
-            Medidor de Hidratação
-          </a></li>
-      </ul>
+  <div id="background-index">
+    <img id="img-background-index" src="img/fundodetela.png" alt="Fundo do site">
+  </div>
+  <!-- header -->
+  <header id="headerDaConfiguracao">
+    <nav id="linksDaConfiguracao">
+      <img id="logoNutrihomeConfiguracao" src="img/logo_nutrihome.png" alt="Logo Nutrihome">
+      <a href="mainPage.html"><img src="img/resumo.png" alt="Ícone de página inicial"></a>
+      <a id="imcCalculadora" href="imcCalculator.html"><img src="img/imc.png" alt="Ícone de cálculo de IMC"></a>
+      <a href="medidorHidratacao.html"><img src="img/drinkwater.png" alt="Ícone de registro de água"></a>
+      <a href="especialista.html"><img src="img/falecomespecilista.png" alt="Ícone de falar com especialista"></a>
+      <a href="configurações.html"><img class="optionsblue" src="img/optionsblue.png" alt="Ícone de configurações"></a>
+      <img id="nestle_logoConfiguracao" src="img/Nestle-Logo.png" alt="Logo Nestlé">
     </nav>
   </header>
-  <h1>Fale com um Especialista</h1>
-  <h1>Fale com um Especialista</h1>
-  <form>
-    <div>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome">
-    </div>
-    <div>
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email">
-    </div>
-    <div>
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem"></textarea>
-    </div>
-    <button type="submit">Enviar</button>
-  </form>
 
-  <p>Nossos especialistas estão prontos para ajudar você com suas dúvidas, sugestões ou qualquer outra informação que você precise. Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
-
-  <p><strong>Horário de atendimento:</strong> de segunda a sexta-feira, das 9h às 18h.</p>
-
-  <p><strong>Tempo de resposta:</strong> Nosso objetivo é responder às suas mensagens dentro de 24 horas úteis.</p>
-
-  <a href="mainPage.html" class="botao01">Voltar</a>
 </body>
 </html>
