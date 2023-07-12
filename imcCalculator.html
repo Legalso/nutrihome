@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NutriHome - Calculadora de IMC</title>
   <link rel="stylesheet" href="assets/css/calculadoraDeIMC.css">
-  <link rel="icon" href="imagens/logo_nutrihome.png">
+  <link rel="icon" href="img/logo_nutrihome.png">
 </head>
 <body>
   <div id="background-index">
-    <img id="img-background-index" src="img/fundodetela.png" alt="Fundo do site">
+    <img id="img-background-index" src="img/3.png" alt="Fundo do site">
   </div>
   <!-- header -->
   <header id="headerDaConfiguracao">
@@ -28,63 +28,23 @@
   <h1 id="calculadora">Calculadora de IMC</h1>
   <form>
     <div>
-      <label for="peso">Peso (kg):</label>
-      <input type="text" id="peso" name="peso">
-    </div>
-    <div>
       <label for="altura">Altura (cm):</label>
       <input type="text" id="altura" name="altura">
+    </div>
+    <div>
+      <label for="peso">Peso (kg):</label>
+      <input type="text" id="peso" name="peso">
     </div>
     <button type="button" onclick="calcularIMC()">Calcular</button>
   </form>
   <div id="resultado"></div>
   <div id="mensagem"></div>
+  <img id="imagem-troca" src="img/imc 1.png" alt="Imagem do IMC">
 
   <a href="#" id="botao-redirecionar" style="display: none;">Veja aqui a sua dieta recomendada!</a>
 
-  <h2>Níveis de IMC</h2>
-  <table>
-    <tr>
-      <th>IMC</th>
-      <th>Categoria</th>
-    </tr>
-    <tr>
-      <td id="amarelo1">Menor que 18.5</td>
-      <td id="amarelo1">Abaixo do peso</td>
-    </tr>
-    <tr>
-      <td id="verde1">18.5 - 24.9</td>
-      <td id="verde1">Peso normal</td>
-    </tr>
-    <tr>
-      <td id="vermelho1">25 - 29.9</td>
-      <td id="vermelho1">Sobrepeso</td>
-    </tr>
-    <tr>
-      <td id="vermelho1">30 - 34.9</td>
-      <td id="vermelho1">Obesidade grau 1</td>
-    </tr>
-    <tr>
-      <td id="vermelho1">35 - 39.9</td>
-      <td id="vermelho1">Obesidade grau 2</td>
-    </tr>
-    <tr>
-      <td id="vermelho1">Maior que 40</td>
-      <td id="vermelho1">Obesidade grau 3</td>
-    </tr>
-  </table>
-  <p>
-    O Índice de Massa Corporal (IMC) é uma medida que utiliza o peso e a altura de uma pessoa para avaliar se seu peso está dentro de uma faixa considerada saudável. Ele é amplamente utilizado como uma ferramenta para identificar a obesidade e o sobrepeso, indicando o risco de desenvolver problemas de saúde relacionados.
-</p>
-<p>
-    O IMC é calculado dividindo o peso (em quilogramas) pela altura ao quadrado (em metros). Apesar de suas limitações, o IMC é uma métrica simples e amplamente reconhecida que pode ajudar a identificar possíveis problemas de peso.
-</p>
-<p>
-    Caso você queira obter mais informações sobre o IMC, você pode consultar a página da
-    <a href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal" target="_blank">Wikipedia</a>.
-</p>
 
-  <a href="mainPage.html" class="botao01">Voltar</a>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/trocarImagem.js"></script>
 </body>
 </html>

@@ -5,43 +5,58 @@ function calcularIMC() {
   var imc = peso / (altura * altura);
   var resultadoElement = document.getElementById('resultado');
   var mensagemElement = document.getElementById('mensagem');
+  var imagemElement = document.getElementById('imagem-troca');
 
   if (peso === '0' || altura === '0' || peso === 0 || altura === 0) {
     resultadoElement.textContent = '';
     mensagemElement.textContent = 'Por favor, insira um valor válido para peso e altura.';
+    imagemElement.setAttribute('src', 'img/imc1.png');
     return;
   }
 
   if (peso === '' || altura === '') {
     resultadoElement.textContent = '';
     mensagemElement.textContent = 'Por favor, preencha o peso e a altura.';
+    imagemElement.setAttribute('src', 'img/imc1.png');
     return;
   }
 
   resultadoElement.textContent = 'Seu IMC é: ' + imc.toFixed(2);
 
   if (imc < 18.5) {
+    resultadoElement.classList.remove('verde', 'vermelho');
     resultadoElement.classList.add('amarelo');
     mensagemElement.textContent = 'IMC abaixo do peso (não saudável)';
-    exibirDietaRecomendada('pagina_indicacao_dieta_abaixo.html');
+    imagemElement.setAttribute('src', 'img/imc 1.png');
   } else if (imc >= 18.5 && imc <= 24.9) {
+    resultadoElement.classList.remove('amarelo', 'vermelho');
     resultadoElement.classList.add('verde');
     mensagemElement.textContent = 'IMC saudável';
-    exibirDietaRecomendada('pagina_indicacao_dieta_saudavel.html');
-  } else {
+    imagemElement.setAttribute('src', 'img/imc 2.png');
+  } else if (imc >= 25 && imc <= 29.9) {
+    resultadoElement.classList.remove('amarelo', 'verde');
     resultadoElement.classList.add('vermelho');
     mensagemElement.textContent = 'IMC acima do peso (não saudável)';
-    exibirDietaRecomendada('pagina_indicacao_dieta_acima.html');
+    imagemElement.setAttribute('src', 'img/imc 3.png');
+  } else if (imc >= 30 && imc <= 34.9) {
+    resultadoElement.classList.remove('verde', 'vermelho');
+    resultadoElement.classList.add('amarelo');
+    mensagemElement.textContent = 'Obesidade grau 1';
+    imagemElement.setAttribute('src', 'img/imc 4.png');
+  } else if (imc >= 35 && imc <= 39.9) {
+    resultadoElement.classList.remove('verde', 'vermelho');
+    resultadoElement.classList.add('amarelo');
+    mensagemElement.textContent = 'Obesidade grau 2';
+    imagemElement.setAttribute('src', 'img/imc 5.png');
+  } else {
+    resultadoElement.classList.remove('verde', 'amarelo');
+    resultadoElement.classList.add('vermelho');
+    mensagemElement.textContent = 'Obesidade grau 3';
+    imagemElement.setAttribute('src', 'img/imc 6.png');
   }
 }
 
-function exibirDietaRecomendada(url) {
-  var botaoRedirecionar = document.getElementById('botao-redirecionar');
-  botaoRedirecionar.setAttribute('href', url);
-  botaoRedirecionar.style.display = 'block';
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-  var calcularButton = document.getElementById('calcular-button');
+  var calcularButton = document.querySelector('button');
   calcularButton.addEventListener('click', calcularIMC);
 });
