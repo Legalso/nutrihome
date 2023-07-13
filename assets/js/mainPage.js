@@ -5,4 +5,4 @@ let peso = localStorage.getItem('peso')
 let imc = localStorage.getItem('imc')
 
 metaAgua.innerHTML = 35 * parseInt(peso) + "ml"
-textIMC.innerHTML = "IMC: " + imc
+textIMC.innerHTML = imc

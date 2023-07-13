@@ -89,10 +89,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 7%;
 }
 
 #box-areas{
-  background-color: red;
   width: 80%;
   height: 20%;
   display: flex;
@@ -101,10 +101,43 @@ body {
 }
 
 #box-hidra{
-  background-color: #20c3ff;
   width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+#box-hidra p{
+  font-size: 550%;
+  color: #20c3ff;
+}
+
+#box-dieta{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#box-dieta img{
+  height: 50%;
+}
+
+#box-dieta a{
+  color: white;
+}
+
+#box-imc{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#box-imc p{
+  font-size: 550%;
+  color: green;
 }
