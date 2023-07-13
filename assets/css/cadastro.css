@@ -201,7 +201,7 @@ header#headerDoCadastro {
   width: 90%;
   padding-left: 3%;
   border: 1px solid black;
-  
+  font-size: 125%;
 }
 
 .selected {
@@ -225,6 +225,6 @@ header#headerDoCadastro {
   width: 20%;
 }
 
-.sexoMF:hover{
-  border: 1px solid white;
+.sexoMF-border{
+  border: 5px solid white;
 }

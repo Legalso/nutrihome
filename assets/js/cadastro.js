@@ -1,5 +1,8 @@
 let selectedRole = null;
 
+const man = document.querySelector('#man')
+const woman = document.querySelector('#woman')
+
 function selectRole(role) {
   const pacienteContainer = document.getElementById('paciente-container');
   const nutriContainer = document.getElementById('nutri-container');
@@ -36,3 +39,13 @@ function selectRole(role) {
     }
   }
 }
+
+man.addEventListener('click', ()=>{
+  man.classList.add('sexoMF-border')
+  woman.classList.remove('sexoMF-border')
+})
+
+woman.addEventListener('click', ()=>{
+  man.classList.remove('sexoMF-border')
+  woman.classList.add('sexoMF-border')
+})
