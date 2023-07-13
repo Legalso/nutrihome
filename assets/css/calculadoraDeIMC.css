@@ -83,22 +83,33 @@ body {
 /* resto do codigo */
 
 form{
-  width: 30%;
+  width: 38%;
+  height: 12%;
   display: flex;
   justify-content: space-between;
 }
 
 #botoes{
+  width: 60%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;  
 }
 
+#botoes div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #botoes label{
-  font-size: 200%;
+  font-size: 250%;
 }
 
 #botoes input{
-  height: 90%;
+  height: 100%;
+  width: 52%;
+  font-size: 180%;
 }
 
 #area-resultado{
@@ -106,19 +117,30 @@ form{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 32%;
   gap: 10%;
   font-size: 120%;
 }
 
 #resultado{
-  padding: 5%;
-  margin-top: 15%;
+  padding: 4%;
+  padding-inline: 20%;
 }
 
 #area-resultado button{
-  height: 80%;
+  height: 50%;
   width: 100%;
   font-size: 120%;
   background-color: orange;
+}
+
+#botao-redirecionar-dieta{
+  text-align: center;
+  padding-top: 0.8%;
+  color: white;
+  background-color: green;
+  text-decoration: none;
+  font-size: 110%;
+  height: 5%;
+  width: 10%;
 }
