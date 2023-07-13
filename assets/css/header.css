@@ -6,21 +6,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  user-select:none;
-}
-
-body {
-  overflow-y: hidden;
-  height: 100vh;
-  font-family: 'Barlow', cursive;
-  margin: 0;
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 0;
 }
 
 #background-index {
@@ -30,11 +15,6 @@ body {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-#img-background-index {
-  height: 100%;
-  width: 100%;
 }
 
 #fototemaescuro {
@@ -79,27 +59,4 @@ body {
 
 #nestle_logoConfiguracao {
   width: 8%;
-}
-
-h1, h2{
-  color: greenyellow;
-}
-
-.esquerda {
-  display: flex;
-  flex-direction: column;
-  /* background-color: aqua; */
-  height: 80%;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.direita {
-  display: flex;
-  flex-direction: row;
-  width: 55%;
-}
-
-#anuncio{
-  height: 85%;
 }

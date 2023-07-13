@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select:none;
 }
 
 body {
@@ -73,7 +74,7 @@ body {
 }
 
 #imcCalculadora {
-  width: 70%;
+  width: 50%;
 }
 
 #nestle_logoConfiguracao {
