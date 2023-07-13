@@ -60,6 +60,8 @@ function calcularIMC() {
 
   var botaoRedirecionarDieta = document.getElementById('botao-redirecionar-dieta');
   botaoRedirecionarDieta.style.display = 'inline'; // Exibe o botão "Dieta Recomendada"
+  var botaoRedirecionarEspec = document.getElementById('botao-redirecionar-especialista');
+  botaoRedirecionarEspec.style.display = 'inline'
 }
 
 function calcularMetaAgua() {

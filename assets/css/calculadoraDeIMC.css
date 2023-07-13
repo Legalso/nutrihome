@@ -141,6 +141,24 @@ form{
   background-color: green;
   text-decoration: none;
   font-size: 110%;
-  height: 5%;
-  width: 10%;
+  height: 100%;
+  width: 50%;
+}
+
+#botao-redirecionar-especialista{
+  text-align: center;
+  padding-top: 0.8%;
+  color: white;
+  background-color: rgb(245, 139, 0);
+  text-decoration: none;
+  font-size: 110%;
+  height: 100%;
+  width: 48%;
+}
+
+#btn-redireciona{
+  height: 4%;
+  width: 22%;
+  display: flex;
+  justify-content: space-around;
 }

@@ -1,10 +1,12 @@
 var contador = 0;
 var meta = parseInt(localStorage.getItem('metaAgua')) || 2400;
 var medidorImagem = document.getElementById('medidor-imagem');
+var areaMeta = document.querySelector('#meta-agua')
+areaMeta.innerHTML = 'Meta: ' + localStorage.getItem('metaAgua') + ' ml'
 
 function diminuirHidratacao() {
   if (contador > 0) {
-    contador -= 600;
+    contador -= parseInt(localStorage.getItem('metaAgua')) / 6;
     exibirContador();
     verificarMeta();
     atualizarImagem();
@@ -13,7 +15,7 @@ function diminuirHidratacao() {
 
 function aumentarHidratacao() {
   if (contador < meta) {
-    contador += 600;
+    contador += parseInt(localStorage.getItem('metaAgua')) / 6;
     exibirContador();
     verificarMeta();
     atualizarImagem();
