@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NutriHome - Medidor de Hidratação</title>
   <link rel="stylesheet" href="assets/css/especialista.css">
-  <link rel="icon" href="imagens/logo_nutrihome.png">
+  <link rel="icon" href="img/logo_nutrihome.png">
   <style>
     body {
       background-color: #ffffff;
@@ -61,9 +61,9 @@
 
   <div class="medidor-container">
     <h2>Medidor de Hidratação</h2>
-    <img id="medidor-imagem" src="imagens/aguaestagio0.png" alt="Imagem de Hidratação">
+    <img id="medidor-imagem" src="img/aguaestagio0.png" alt="Imagem de Hidratação">
     <div id="medidor-contador" class="medidor-contador">0 ml</div>
-    <div class="medidor-meta">Meta: 2400 ml</div>
+    <div class="medidor-meta" id="meta-agua">Meta: 2400 ml</div>
     <div class="medidor-botoes">
       <button onclick="diminuirHidratacao()" class="round-button">-</button>
       <button onclick="aumentarHidratacao()" class="round-button">+</button>
@@ -71,45 +71,6 @@
     <div id="parabens-mensagem" class="parabens-mensagem" style="display: none;">Parabéns! Você atingiu a meta de hidratação!</div>
   </div>
 
-  <script>
-    var contador = 0;
-    var meta = 2400;
-    var medidorImagem = document.getElementById("medidor-imagem");
-
-    function diminuirHidratacao() {
-      if (contador > 0) {
-        contador -= 600;
-        exibirContador();
-        verificarMeta();
-        atualizarImagem();
-      }
-    }
-
-    function aumentarHidratacao() {
-      if (contador < meta) {
-        contador += 600;
-        exibirContador();
-        verificarMeta();
-        atualizarImagem();
-      }
-    }
-
-    function exibirContador() {
-      document.getElementById("medidor-contador").textContent = contador + " ml";
-    }
-
-    function verificarMeta() {
-      if (contador >= meta) {
-        document.getElementById("parabens-mensagem").style.display = "block";
-      } else {
-        document.getElementById("parabens-mensagem").style.display = "none";
-      }
-    }
-
-    function atualizarImagem() {
-      var imagemEstagio = Math.floor(contador / (meta / 4));
-      medidorImagem.src = "imagens/aguaestagio" + imagemEstagio + ".png";
-    }
-  </script>
+  <script src="assets/js/medidorHidratacao.js"></script>
 </body>
 </html>

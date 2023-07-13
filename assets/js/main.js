@@ -55,16 +55,23 @@ function calcularIMC() {
     imagemElement.setAttribute('src', 'img/imc 6.png');
   }
 
-  // Armazena o valor do IMC no armazenamento local
-  localStorage.setItem('imc', imc.toFixed(2));
+  localStorage.setItem('imc', imc.toFixed(2)); // Armazena o valor do IMC no armazenamento local
+}
 
-  // Redireciona para a página principal após 2 segundos
-  setTimeout(function() {
-    window.location.href = 'mainPage.html';
-  }, 2000);
+function calcularMetaAgua() {
+  var peso = document.getElementById('peso').value;
+  var metaAgua = Math.round(peso * 35); // Cálculo da meta de água com base no peso (35 ml por kg)
+
+  localStorage.setItem('metaAgua', metaAgua); // Armazena a meta de água no armazenamento local
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  var calcularButton = document.querySelector('button');
+  calcularButton.addEventListener('click', function() {
+    calcularIMC();
+    calcularMetaAgua();
+  });
+
   var imcNumeroElement = document.getElementById('imc-numero');
   var imcValue = localStorage.getItem('imc');
 
@@ -72,5 +79,14 @@ document.addEventListener('DOMContentLoaded', function() {
     imcNumeroElement.textContent = 'Seu último IMC foi: ' + imcValue;
   } else {
     imcNumeroElement.textContent = 'Ainda não há IMC registrado';
+  }
+
+  var metaAguaElement = document.getElementById('meta-agua');
+  var metaAguaValue = localStorage.getItem('metaAgua');
+
+  if (metaAguaValue) {
+    metaAguaElement.textContent = 'Meta de Hidratação: ' + metaAguaValue + ' ml';
+  } else {
+    metaAguaElement.textContent = 'Ainda não há meta de hidratação registrada';
   }
 });
