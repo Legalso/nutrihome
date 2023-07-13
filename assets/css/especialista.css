@@ -77,3 +77,34 @@ body {
 #nestle_logoConfiguracao {
   width: 8%;
 }
+
+/* area do site */
+
+#areaTela{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#box-areas{
+  background-color: red;
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#box-hidra{
+  background-color: #20c3ff;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

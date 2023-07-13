@@ -56,6 +56,7 @@ function calcularIMC() {
   }
 
   localStorage.setItem('imc', imc.toFixed(2)); // Armazena o valor do IMC no armazenamento local
+  localStorage.setItem('peso', peso)
 }
 
 function calcularMetaAgua() {
