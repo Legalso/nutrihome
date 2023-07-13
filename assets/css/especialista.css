@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap%27');
+
 
 * {
   padding: 0;
@@ -9,7 +11,7 @@
 body {
   height: 100vh;
   overflow-y: hidden;
-  font-family: 'Happy Monkey', cursive;
+  font-family: 'Barlow', cursive;
   margin: 0;
   background-color: black;
   color: white;
@@ -89,7 +91,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 7%;
+  gap: 12%;
 }
 
 #box-areas{
@@ -121,8 +123,9 @@ body {
   align-items: center;
 }
 
+
 #box-dieta img{
-  height: 50%;
+  height: 150%;
 }
 
 #box-dieta a{

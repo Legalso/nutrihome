@@ -78,3 +78,14 @@ body {
 #nestle_logoConfiguracao {
   width: 8%;
 }
+
+h1, h2{
+  color: greenyellow;
+}
+
+.esquerda {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  height: 100%;
+}
