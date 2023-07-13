@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById('botao-redirecionar-dieta').addEventListener('click', function() {
-  var imc = parseFloat(document.getElementById('imc-numero').textContent);
+  var imc = localStorage.getItem('imc');
   if (imc >= 18.5 && imc <= 24.9) {
     window.location.href = 'pagina_indicacao_dieta_saudavel.html';
   } else if (imc < 18.5) {
