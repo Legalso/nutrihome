@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap%27%27');
 
 * {
   padding: 0;
@@ -10,7 +11,7 @@
 body {
   height: 100vh;
   overflow-y: hidden;
-  font-family: 'Happy Monkey', cursive;
+  font-family: 'Barlow', cursive;
   margin: 0;
   background-color: black;
   color: white;
@@ -77,4 +78,47 @@ body {
 
 #nestle_logoConfiguracao {
   width: 8%;
+}
+
+/* resto do codigo */
+
+form{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#botoes{
+  display: flex;
+  flex-direction: column;  
+}
+
+#botoes label{
+  font-size: 200%;
+}
+
+#botoes input{
+  height: 90%;
+}
+
+#area-resultado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 10%;
+  font-size: 120%;
+}
+
+#resultado{
+  padding: 5%;
+  margin-top: 15%;
+}
+
+#area-resultado button{
+  height: 80%;
+  width: 100%;
+  font-size: 120%;
+  background-color: orange;
 }
