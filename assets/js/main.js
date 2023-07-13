@@ -56,7 +56,10 @@ function calcularIMC() {
   }
 
   localStorage.setItem('imc', imc.toFixed(2)); // Armazena o valor do IMC no armazenamento local
-  localStorage.setItem('peso', peso)
+  localStorage.setItem('peso', peso);
+
+  var botaoRedirecionarDieta = document.getElementById('botao-redirecionar-dieta');
+  botaoRedirecionarDieta.style.display = 'inline'; // Exibe o botão "Dieta Recomendada"
 }
 
 function calcularMetaAgua() {
@@ -89,5 +92,16 @@ document.addEventListener('DOMContentLoaded', function() {
     metaAguaElement.textContent = 'Meta de Hidratação: ' + metaAguaValue + ' ml';
   } else {
     metaAguaElement.textContent = 'Ainda não há meta de hidratação registrada';
+  }
+});
+
+document.getElementById('botao-redirecionar-dieta').addEventListener('click', function() {
+  var imc = parseFloat(document.getElementById('imc-numero').textContent);
+  if (imc >= 18.5 && imc <= 24.9) {
+    window.location.href = 'pagina_indicacao_dieta_saudavel.html';
+  } else if (imc < 18.5) {
+    window.location.href = 'pagina_indicacao_dieta_abaixo.html';
+  } else if (imc > 24.9) {
+    window.location.href = 'pagina_indicacao_dieta_acima.html';
   }
 });
