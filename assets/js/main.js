@@ -54,9 +54,23 @@ function calcularIMC() {
     mensagemElement.textContent = 'Obesidade grau 3';
     imagemElement.setAttribute('src', 'img/imc 6.png');
   }
+
+  // Armazena o valor do IMC no armazenamento local
+  localStorage.setItem('imc', imc.toFixed(2));
+
+  // Redireciona para a página principal após 2 segundos
+  setTimeout(function() {
+    window.location.href = 'mainPage.html';
+  }, 2000);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var calcularButton = document.querySelector('button');
-  calcularButton.addEventListener('click', calcularIMC);
+  var imcNumeroElement = document.getElementById('imc-numero');
+  var imcValue = localStorage.getItem('imc');
+
+  if (imcValue) {
+    imcNumeroElement.textContent = 'Seu último IMC foi: ' + imcValue;
+  } else {
+    imcNumeroElement.textContent = 'Ainda não há IMC registrado';
+  }
 });
