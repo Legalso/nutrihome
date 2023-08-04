@@ -1,0 +1,91 @@
+NUTRIHOME
+PLANO DE APRESENTAÇÃO 
+Máximo de 5 minutos
+
+Falar devagar, calmamente e de maneira clara
+Use palavras simples, mas tenha propriedade e conhecimento ao falar
+
+Slide 1 - Logo do NutriHome X
+
+- Começar dizendo que estava muito ansioso para esse dia, se apresente e diga que está representando o grupo que desenvolvou a aplicação.
+- Depois conte uma história sobre a origem da ideia do plataforma
+
+
+
+Slide 2 - Gráficos X
+* Todos deveriam ter acesso a uma alimentação boa
+* Nem todos tem o poder financeiro suficiente para conseguir o conhecimento sobre uma alimentação saudável
+
+(Procurar porcentagens para colocar num slide 2 sobre a quantidade de pessoas que possuem uma alimentação balanceada no Brasil)
+
+* As soluções já existentes nas lojas digitais normalmente estão divididas em dois grupos, as pagas, onde é necessário pagar uma assinatura para ter acesso, e as gratuitas, onde o usuário não consegue entrar em contato com um profissional
+* Foi aí que eu e meu amigo Vinícius tivemos a ideia de uma solução, uma que fosse boa tanto para as pessoas comuns quanto para os nutricionistas
+
+
+Apresentar nos slides as duas principais ferramentas da plataforma
+
+Slide 3 - Slide com a página inicial para a pessoa comum X
+
+- Um ambiente gratuito onde as pessoas podem cuidar da própria saúde
+
+Slide 4 - Slide com a página inicial para o profissional da área da nutrição X
+
+- Um lugar onde os profissionais da área da nutrição podem conseguir mais clientes e podem oferecer um preço popular
+
+Slide 5 - Logo da Nutrihome com o Slogan embaixo (Sua saúde em boas mãos, na comodidade do lar.)
+
+* Juntando essas duas plataformas, temos uma solução completa para ambos os tipos de usuários. 
+
+* Agora, eu gostaria de mostrar a interface do nosso projeto.
+
+Slide 6 - tela de login
+
+* A tecnologia escolhida para construir nossa ferramenta foi o HTML, o CSS e o Javacript. 
+* O Principal motivo para essa escolha foi a acessibilidade que o desenvolvimento Web tem. Praticamente qualquer dispositivo consegue acessar um site. E nós temos a opção de desabilitar recursos visuais para que fique ainda mais acessível.
+* Afinal, o que pode ser acessado por mais pessoas do que um site? A resposta é um aplicativo.
+
+Slide 7 - tela de login - app
+
+* Desde o começo do desenvolvimento da nossa ferramenta deixamos como prioridade a responsividade do site, dessa maneira tudo pode funcionar em dispositivos mobile.
+* Para utilizar a plataforma, é necessário criar uma conta.
+* Criar uma conta no NutriHome é muito simples, você tem a opção de usar uma rede social para isso, ou então você pode clicar em "criar conta"
+
+Slide 8 - tela de criação de conta
+
+* Na página de criação de conta, depois de preencher as informações básicas como nome, email e sexo, o usuário consegue escolher se é um paciente ou um profissional de nutrição.
+Caso ele escolha a opção de ser profissional de nutrição, ele precisará provar com seu registro profissional no Conselho Regional de Nutricionistas (CRN)
+
+Slide 8 - Página inicial de ambas as roles
+
+* Essas são as duas interfaces da plataforma. Do lado esquerdo conseguimos ver a visualização do nutricionistas e do direito a do usuário 
+* Por conta do tempo, talvez não consiga, mas vou passar rapidamente por cada função da plataforma.
+
+Slide 9 - configurações (usuário)
+
+* Essa é a página de configuração da conta, onde o usuário consegue editar seus dados pessoas, mudar o tema e se conectar com o google fit para compartilhar os dados com outras aplicações e poder puxar por exemplo de um smartwatch.
+
+Slide 10 - Cálculo de IMC
+
+* A calculadora de IMC foi a primeira parte da ferramenta a ser concluída. Aqui o usuário pode digitar sua altura e seu peso e receber o seu IMC, que fica salvo no aplicativo. 
+
+Slide 11 - Página de dieta
+
+* Depois, com o IMC do usuário a ferramenta automaticamente recomenda um plano nutricional com base na análise do IMC, existem vários planos nutricionais na plataforma, seja de perda de peso, ganho ou para manter. Todos foram colocados ali com base em muita pesquisa, mas futuramente esses planos podem ser alterados por nutricionistas.
+* Em todas as dietas nós incluimos alguns produtos da Nestlé, como por exemplo o Nutren, Impact e Fibermais.
+
+Slide 12 - Medidor de Hidratação
+
+* De acordo com o peso e a altura do usuário, o aplicativo calcula quantos mL de água ele precisa por dia e o notifica para beber água.
+* Dessa maneira ele consegue registrar quanta água ele toma por dia. Vocês se surpreenderiam com a quantidade de pessoas que não tomam a quantidade diária de água recomendada por dia.
+
+Slide 13 - tela de falar com um especialista
+
+* Agora chegamos no que por enquanto é a última página da plataforma para o usuário. No futuro nós planejamos expadir. 
+* Aqui o usuário consegue entrar em contato diretamente com um nutricionista, enviando uma mensagem que será respondida por um nutricionista da plataforma.
+* Ele vai poder escolher depois de respondido se continua falando com esse especialista ou se mandará outra mensagem procurando outro profissional.
+
+Slide 14 - Tela inicial do nutricionista
+
+* Na visão da plataforma para o nutricionista, ele vai receber as mensagens enviadas por todos os usuários, seu nível de IMC e % de Hidratação diária. Ele terá a opção de responder o paciente, e quem sabe conseguir um novo cliente. Será escolha do nutricionista se ele irá cobrar ou não, e também o quanto irá cobrar.
+
+Slide 15 - Logo do Nutrihome e agradecimentos
